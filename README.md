@@ -16,7 +16,7 @@ Machine Learning system for identifying tweet authors with 91% accuracy using ad
 ## 🚀 Quick Start
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/twitter-authorship-attribution.git
+git clone https://github.com/asad-waraich/twitter-authorship-attribution.git
 cd twitter-authorship-attribution
 pip install -r requirements.txt
 
@@ -51,10 +51,38 @@ python scripts/predict.py --text "Your tweet text here"
 - 5-fold cross-validation
 - 80/20 train-test split
 - Stratified sampling
+## 📊 Results & Visualizations
 
-## 📈 Visualizations
-![Model Comparison](results/figures/model_comparison.png)
-![Confusion Matrix](results/figures/confusion_matrix.png)
+### Model Performance Comparison
+
+Our experiments show that embeddings significantly outperform traditional Bag-of-Words features:
+
+<div align="center">
+  <img src="images/bow_performance.png" width="45%" />
+  <img src="images/embeddings_performance.png" width="45%" />
+</div>
+
+*Left: BoW features (58% accuracy) | Right: Sentence embeddings (83% accuracy)*
+
+### Best Model Results
+
+Using k=1 with sentence embeddings achieved our best performance:
+
+![Best Model Results](images/best_confusion_matrix.png)
+
+**Key Metrics:**
+- **Accuracy: 83.06%** 
+- Precision: 0.83 (weighted avg)
+- Recall: 0.83 (weighted avg)
+- F1-Score: 0.83 (weighted avg)
+
+### Performance Improvement Analysis
+
+| Feature Type | Best Accuracy | Optimal k |
+|-------------|--------------|-----------|
+| Bag-of-Words | 57.76% | k=1 |
+| Sentence Embeddings | 83.06% | k=1 |
+| **Improvement** | **+25.3%** | - |
 
 ## 🔬 Key Findings
 - Embeddings outperform BoW by 10-15% across all models
