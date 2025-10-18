@@ -16,7 +16,7 @@ Machine Learning system for identifying tweet authors with 91% accuracy using ad
 ## 🚀 Quick Start
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/twitter-authorship-attribution.git
+git clone https://github.com/asad-waraich/twitter-authorship-attribution.git
 cd twitter-authorship-attribution
 pip install -r requirements.txt
 
