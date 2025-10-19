@@ -58,9 +58,10 @@ python scripts/predict.py --text "Your tweet text here"
 Our experiments show that embeddings significantly outperform traditional Bag-of-Words features:
 
 <p align="center">
-  <img src="images/bow_performance.png" alt="BoW Loss Plot" width="45%">
-  <img src="images/embeddings_performance.png" alt="Embeddings Loss Plot" width="45%">
+  <img src="images/bow_performance.png" alt="BoW Loss Plot" style="width:48%; display:inline-block; margin-right:1%;">
+  <img src="images/embeddings_performance.png" alt="Embeddings Loss Plot" style="width:48%; display:inline-block;">
 </p>
+
 
 
 *Left: BoW features (58% accuracy) | Right: Sentence embeddings (83% accuracy)*
